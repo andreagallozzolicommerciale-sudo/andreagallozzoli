@@ -58,13 +58,26 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:#
   <div class="heading"><span class="kicker">Prenotazioni</span><h2>Contatti</h2><p>Invia la tua richiesta e indica la modalità di consulenza che preferisci.</p></div>
   <div class="contact">
    <form id="form" action="https://formspree.io/f/xaeynrgd" method="POST">
-      <label for="name">NOME</label><input id="name" required>
-      <label for="email">E-MAIL</label><input id="email" type="email" required>
-      <label for="service">CONSULENZA</label>
-      <select id="service" required><option value="">Seleziona una modalità</option><option>Consulto telefonico — 51 € / 1 ora</option><option>Consulto video — 80 € / 1 ora</option></select>
-      <label for="message">MESSAGGIO</label><textarea id="message" placeholder="Scrivi le tue disponibilità o la tua richiesta..."></textarea>
-      <button class="btn" type="submit">INVIA RICHIESTA</button>
-    </form>
+
+<label for="name">NOME</label>
+<input id="name" name="name" type="text" required>
+
+<label for="email">E-MAIL</label>
+<input id="email" name="email" type="email" required>
+
+<label for="service">CONSULENZA</label>
+<select id="service" name="service" required>
+<option value="">Choisir</option>
+<option value="Consulto video">Consulto video — 80 € / 1 ora</option>
+<option value="Consulenza">Consulenza</option>
+</select>
+
+<label for="message">MESSAGGIO</label>
+<textarea id="message" name="message" required></textarea>
+
+<button class="btn" type="submit">INVIA RICHIESTA</button>
+
+   </form>
     <div class="direct">Oppure scrivi direttamente a<br><a href="mailto:andreagallozzolicommerciale@gmail.com">andreagallozzolicommerciale@gmail.com</a></div>
   </div>
 </section>
