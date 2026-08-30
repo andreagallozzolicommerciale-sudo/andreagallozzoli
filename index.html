@@ -71,12 +71,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:#
 </main>
 <footer>© <span id="year"></span> Andrea Gallozzoli · Consulenze personalizzate</footer>
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
-document.getElementById("form").addEventListener("submit",function(e){
- e.preventDefault();
- const body=`Nome: ${name.value}\nE-mail: ${email.value}\nConsulenza: ${service.value}\n\nMessaggio:\n${message.value}`;
- location.href="mailto:andreagallozzolicommerciale@gmail.com?subject="+encodeURIComponent("Richiesta di consulenza — "+service.value)+"&body="+encodeURIComponent(body);
-});
+
 </script>
 </body>
 </html>
